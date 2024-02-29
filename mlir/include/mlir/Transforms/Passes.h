@@ -130,6 +130,9 @@ createSymbolPrivatizePass(ArrayRef<std::string> excludeSymbols = {});
 /// their producers.
 std::unique_ptr<Pass> createTopologicalSortPass();
 
+/// Creates a pass for decompose softmax.
+std::unique_ptr<Pass> createDecomposeAggregatedOps();
+
 //===----------------------------------------------------------------------===//
 // Registration
 //===----------------------------------------------------------------------===//

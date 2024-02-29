@@ -542,5 +542,11 @@ def TopologicalSort : Pass<"topological-sort"> {
 
   let constructor = "mlir::createTopologicalSortPass()";
 }
+def DecomposeAggregatedOps : Pass<"decompose-aggregated-ops", "func::FuncOp"> {
+  let summary = "Decompose aggregated operations.";
+  let description = [{
+    Decompose operations that implement the `AggregatedOpInterface`.
+  }];
+}
 
 #endif // MLIR_TRANSFORMS_PASSES

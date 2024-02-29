@@ -4,6 +4,7 @@ add_mlir_library(MLIRTransforms
   Canonicalizer.cpp
   ControlFlowSink.cpp
   CSE.cpp
+  DecomposeAggregatedOps.cpp
   GenerateRuntimeVerification.cpp
   Inliner.cpp
   LocationSnapshot.cpp
